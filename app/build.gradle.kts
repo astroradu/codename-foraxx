@@ -43,6 +43,7 @@ android {
     }
 
     kotlinOptions {
+        freeCompilerArgs += listOf("-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api")
         jvmTarget = "11"
     }
 

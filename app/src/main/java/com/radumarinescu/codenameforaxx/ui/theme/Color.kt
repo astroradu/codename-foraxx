@@ -1,11 +1,24 @@
 package com.radumarinescu.codenameforaxx.ui.theme
 
-import androidx.compose.ui.graphics.Color
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ReadOnlyComposable
+import androidx.compose.runtime.compositionLocalOf
+import com.radumarinescu.codenameforaxx.ui.theme.resources.colors.ComponentColors
+import com.radumarinescu.codenameforaxx.ui.theme.resources.colors.GlobalColors
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val globalColors = GlobalColors()
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val LightColors = ComponentColors(
+    background = globalColors.white
+)
+
+val DarkColors = ComponentColors(
+    background = globalColors.black
+)
+
+internal val LocalColors = compositionLocalOf { LightColors }
+
+val Colors
+    @Composable
+    @ReadOnlyComposable
+    get() = LocalColors.current
