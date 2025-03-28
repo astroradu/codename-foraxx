@@ -9,16 +9,30 @@ import com.radumarinescu.codenameforaxx.ui.theme.resources.colors.GlobalColors
 val globalColors = GlobalColors()
 
 val LightColors = ComponentColors(
-    background = globalColors.white
+    background = globalColors.white,
+    gradientUpvoteStart = globalColors.lightRed,
+    gradientUpvoteEnd = globalColors.sunshade,
+    textStrong = globalColors.gainsboro,
+    textMedium = globalColors.silver,
+    textFaded = globalColors.mistBlue,
+    textUpvote = globalColors.mediumVermilion,
+    textQuote = globalColors.jungleGreen,
 )
 
 val DarkColors = ComponentColors(
-    background = globalColors.black
+    background = globalColors.white,
+    gradientUpvoteStart = globalColors.lightRed,
+    gradientUpvoteEnd = globalColors.sunshade,
+    textStrong = globalColors.gainsboro,
+    textMedium = globalColors.silver,
+    textFaded = globalColors.mistBlue,
+    textUpvote = globalColors.mediumVermilion,
+    textQuote = globalColors.jungleGreen,
 )
 
 internal val LocalColors = compositionLocalOf { LightColors }
 
-val Colors
+val ForaxxColors
     @Composable
     @ReadOnlyComposable
     get() = LocalColors.current
