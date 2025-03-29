@@ -17,10 +17,12 @@ val LightColors = ComponentColors(
     textFaded = globalColors.mistBlue,
     textUpvote = globalColors.mediumVermilion,
     textQuote = globalColors.jungleGreen,
+    iconTint = globalColors.silver,
+    ripple = globalColors.darkJungleGreen
 )
 
 val DarkColors = ComponentColors(
-    background = globalColors.white,
+    background = globalColors.anthracite,
     gradientUpvoteStart = globalColors.lightRed,
     gradientUpvoteEnd = globalColors.sunshade,
     textStrong = globalColors.gainsboro,
@@ -28,9 +30,11 @@ val DarkColors = ComponentColors(
     textFaded = globalColors.mistBlue,
     textUpvote = globalColors.mediumVermilion,
     textQuote = globalColors.jungleGreen,
+    iconTint = globalColors.silver,
+    ripple = globalColors.darkJungleGreen
 )
 
-internal val LocalColors = compositionLocalOf { LightColors }
+internal val LocalColors = compositionLocalOf { DarkColors }
 
 val ForaxxColors
     @Composable

@@ -6,7 +6,7 @@ import androidx.compose.ui.graphics.Color
 @Immutable
 data class ComponentColors(
     var background: Color = Color.Unspecified,
-
+    val ripple: Color = Color.Unspecified,
     val gradientUpvoteStart: Color = Color.Unspecified,
     val gradientUpvoteEnd: Color = Color.Unspecified,
 
@@ -14,5 +14,7 @@ data class ComponentColors(
     val textMedium: Color = Color.Unspecified,
     val textFaded: Color = Color.Unspecified,
     val textUpvote: Color = Color.Unspecified,
-    val textQuote: Color = Color.Unspecified
+    val textQuote: Color = Color.Unspecified,
+
+    val iconTint: Color = Color.Unspecified
 )
