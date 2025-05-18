@@ -99,7 +99,8 @@ private fun ScreenPreview() {
                             painter = painterResource(R.drawable.ic_back),
                             onClick = {
                                 visible = !visible
-                            })
+                            }
+                        )
                     }
                 )
             },

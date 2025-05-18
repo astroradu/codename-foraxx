@@ -65,6 +65,11 @@ dependencies {
     implementation(libs.androidx.hilt.android)
     implementation(libs.androidx.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.squareup.retrofit2)
+    implementation(libs.squareup.retrofit2.converter)
+    implementation(libs.squareup.okhttp)
+    implementation(libs.squareup.okhttp.intercetpor)
+
     ksp(libs.androidx.hilt.android.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -3,8 +3,8 @@ package com.radumarinescu.codenameforaxx
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.ui.res.painterResource
-import com.radumarinescu.codenameforaxx.ui.components.IconButton
+import androidx.navigation.compose.rememberNavController
+import com.radumarinescu.codenameforaxx.ui.Navigation
 import com.radumarinescu.codenameforaxx.ui.theme.CodenameForaxxTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -14,9 +14,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CodenameForaxxTheme {
-                IconButton(
-                    painter = painterResource(R.drawable.ic_back),
-                    onClick = {})
+                val navController = rememberNavController()
+                Navigation(navController)
             }
         }
     }
